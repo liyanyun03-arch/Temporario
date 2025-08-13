@@ -1,0 +1,100 @@
+## move icon routine adjustment
+081C0F4E 40 B4 00 26 0D 49 08 47
+081C12EE 40 B4 01 26 0D 49 08 47
+081C1754 40 B4 02 26 11 49 08 47
+## move delimiters
+080D8F0C C0 46 C0 46 C0 46
+080DE83A C0 46 C0 46 C0 46
+0814E504 C0 46 C0 46 C0 46
+0814EF4A C0 46 C0 46 C0 46
+0814EF62 C0 46 C0 46 C0 46
+## auxilliary table type delimiter
+0856EFDE 13
+0856EFE6 13
+## pokemon type delimiter
+0861CFC1 30
+## pokemom type palette tweaks
+08D97BC1 FF 66
+08D97BC8 3D 66
+## nop cmd6
+0831BD28 41 06 05 08
+## smellingsalts text now allows all conditions
+085CA024 FD 00 AB FF
+## intimidate uses bank attacker
+085CB0F6 18
+085CB0F1 0F
+## battlestring for stat change now uses scripting active and not target/attacker banks because of a certain problem
+085CA05F 13
+085CA046 13
+## magnitude calc not changing the target bank
+08053E56 00 00
+08053E8A 00 00
+## spite always taking 4pp
+080532EA 04 20 00 00 06 1C
+## make speed button faster
+080008AC 00 B5 05 4A 13 88 01 20 83 43 13 80 02 DF 13 88 03 42 FB D0 00 BD 00 00 DC 22 00 03
+## Trick usable for wild/trainer Pokemon
+08054EDA 02
+## air lock cacophony index fix
+08042700 4C
+08042752 4C
+08033B84 4C
+## item effect delimiter
+080D7508 C0 46 C0 46 C0 46 C0 46
+## adjust focus turn script
+082DB212 3F
+## Illusion, the function is called at the end instead of in the middle
+0805B204 00 00 00 00
+## Change Nauture power decoder
+085CAAF7 36
+## Change Soundproof'd decoder
+085CB172 36
+##### Wild Double Battles
+## When starting a wild battle don't clear battle flags(it's done automatically after the end of a battle)
+080B06D0 14 48 FF F7 F1 FF
+## battlescript switch out after fainting your poke also applies to double
+082DA7E3 09
+## print bank target name instead of the first opponent pokemon
+085CBFFC 35
+085CBFA6 35
+085CC02A 35
+## dont clear unused text battle pointer that will be used as ptr to text when opponent wins
+080B1344 00 00
+0854FED8 07
+0854FF20 07
+0854FF68 07
+0854FFB0 07
+0854FFF8 07
+08550040 07
+08550088 07
+## ai switching on partner player
+08063B8E 00 80 C0 00
+## magic coat text change
+085CAD78 AB FF
+## hook into bs that asks you if you want to switch poke
+082DA82D 28
+## Adjust posicion Icon Fairy TM
+0860F122 C0
+0860F126 C8
+0860F12A E0
+0860F12E E8
+0860F132 00 01 2A 0C A8
+##Invert position description ability
+0861CCDE 0E 14 06 06 2D 02 00 0B 09 12 04 06 E5 01
+##Adjust text nature
+085EA4EC C8 D5 E8 E9 E6 D9 F0 00 F7 00 F7 02 F7 01 F7 05 00 FE C6 E3 D7 D5 E0 F0 00 F7 00 F7 04 F7 01 AD FF
+## Ã, Õ, ã e õ
+0863C1E5 F6 00 DB
+0863C72B F6 00 DB
+0863FB25 D9 C0 66
+0863FB65 D9 C0 66
+0863FBEB D9 40 E6
+0863FC2A C0 66 C0 99
+0864C5E4 B0 FD F0 F6
+0864CB2A B0 FD F0 F6
+0864FF24 70 E6 B0 D9
+0864FF64 70 E6 B0 D9
+0864FFEA 70 E6 B0 D9
+0865002A 70 E6 B0 D9
+## Pallete Badges
+0856F4EC 23 43 67 4E 46 6A 8C 5A 70 73 5F 7E BE 71 18 63 95 06 9E 27 D0 05 CE 35 01 00 FD 09 3A 19 B2 10
